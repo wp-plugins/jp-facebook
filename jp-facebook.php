@@ -3,7 +3,7 @@
 Plugin Name: JP-Facebook
 Plugin URI: http://www.jpreece.com/tutorials/wordpress/jp-facebook/
 Description: Adds a Facebook 'Like' button to any page on your blog
-Version: 0.1
+Version: 0.2
 Author: Jonathan Preece
 Author URI: http://www.jpreece.com
 License: GPL2
@@ -29,14 +29,31 @@ License: GPL2
 <?php
 
 //Acts as a handler for the Summary shortcode
-function facebooklike_func($atts, $content = null)
-{		
-	//Get attributes
-	extract(shortcode_atts($atts));
-	
+function facebooklike_func()
+{			
 	echo '<iframe src="http://www.facebook.com/widgets/like.php?href=' . get_permalink() . '" 
         scrolling="no" frameborder="0" style="border:none; width:450px; height:80px"></iframe>';
 }
+
+//add_action('admin_menu', 'my_plugin_menu');
+//
+//function my_plugin_menu() {
+//
+//  add_options_page('JP-Facebook Options', 'JP-Facebook', 'manage_options', 'my-unique-identifier', 'my_plugin_options');
+//
+//}
+//
+//function my_plugin_options() {
+//
+//  if (!current_user_can('manage_options'))  {
+//    wp_die( __('You do not have sufficient permissions to access this page.') );
+//  }
+//
+//  echo '<div class="wrap">';
+//  echo '<p>Here is where the form would go if I actually had options.</p>';
+//  echo '</div>';
+//
+//}
 
 //Adds shortcode [Facebook-Like]
 add_shortcode('JP-Facebook-Like', 'facebooklike_func');

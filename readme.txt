@@ -4,7 +4,7 @@ Donate link: http://www.jpreece.com
 Tags: facebook,like,share,button
 Requires at least: 2.7
 Tested up to: 3.0
-Stable tag: 0.1
+Stable tag: 0.2
 
 Adds a Facebook 'Like' button to any page on your blog
 
@@ -28,6 +28,9 @@ This section describes how to install the plugin and get it working.
 
 
 == Changelog ==
+
+= 0.2 =
+* Bug fixed for some earlier versions of WordPress
 
 = 0.1 =
 * First public release
