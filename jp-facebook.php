@@ -3,7 +3,7 @@
 Plugin Name: JP-Facebook
 Plugin URI: http://www.jpreece.com/tutorials/wordpress/jp-facebook/
 Description: Adds a Facebook 'Like' button to any page on your blog
-Version: 0.3
+Version: 0.4
 Author: Jonathan Preece
 Author URI: http://www.jpreece.com
 License: GPL2
@@ -96,7 +96,12 @@ class JPFB_Widget extends WP_Widget
 function facebooklike_func()
 {			
 	echo '<iframe src="http://www.facebook.com/widgets/like.php?href=' . get_permalink() . '" 
-        scrolling="no" frameborder="0" style="border:none; width:450px; height:80px"></iframe>';
+        scrolling="no" frameborder="0" style="border:none; width:450px; height:25px; "></iframe>';
+}
+
+function get_fb_like_button()
+{
+	echo '<div id="fb-like-div" style="float:right; width:255px; border:none"><iframe src="http://www.facebook.com/widgets/like.php?href=' . get_permalink() . '" scrolling="no" frameborder="0" style="border:none; width:300px; height:25px; text-align:right"></iframe></div>';
 }
 
 add_shortcode('JP-Facebook-Like', 'facebooklike_func');
