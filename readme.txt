@@ -19,10 +19,6 @@ Adds a Facebook 'Like' button to any page on your blog
 * Activate the plugin through the 'Plugins' menu in WordPress
 * Add widget to sidebar and set it to your liking or use [JP-Facebook-Like] shortcode in your pages/posts
 
-== Frequently Asked Questions ==
-= Where can I see an example of the widget/plugin? =
-On the tutorial page; http://www.jpreece.com/tutorials/wordpress/jp-facebook/
-
 == Screenshots ==
 1. Widget options in WordPress 3.0 (Compatible with 2.8 upwards)
 2. Example of the widget in action
