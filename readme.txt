@@ -12,14 +12,12 @@ Adds a Facebook 'Like' button to any page on your blog
 Adds a Facebook 'Like' button to any page on your blog
 
 = Important URL's =
-[Plugin Home](http://www.jpreece.com/tutorials/wordpress/jp-facebook/) |
 [Twitter](http://twitter.com/jonpreecebsc)
 
 == Installation ==
 * Upload `jp-facebook` folder to the `/wp-content/plugins/` directory
 * Activate the plugin through the 'Plugins' menu in WordPress
 * Add widget to sidebar and set it to your liking or use [JP-Facebook-Like] shortcode in your pages/posts
-* See http://www.jpreece.com/tutorials/wordpress/jp-facebook/ for complete tutorial
 
 == Frequently Asked Questions ==
 = Where can I see an example of the widget/plugin? =
